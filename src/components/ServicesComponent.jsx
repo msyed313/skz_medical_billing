@@ -1,7 +1,7 @@
 import React from 'react'
 const services = [
     {
-      img: 'src/assets/revenue.png',
+      img: '/vite.svg',
       service: 'Credentialing Services',
       description: 'Ensure your healthcare providers are credentialed with all major insurance networks, allowing them to be reimbursed for services rendered'
 
