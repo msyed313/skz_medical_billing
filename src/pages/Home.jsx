@@ -1,18 +1,12 @@
 import React from "react";
-import background from "../assets/background.jpg";
 import { NavLink } from "react-router-dom";
 import Started from "../components/Started";
 import ServicesComponent from "../components/ServicesComponent";
 import Benefit from "../components/Benefit";
-import businesswoman from "../assets/businesswoman.jpg"
-import businessman from "../assets/businessman.jpg"
 function Home() {
-
-  
-
   return (
     <>
-      <div className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
+      <div className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: `url("/assets/background.jpg")` }}>
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-white opacity-70"></div>
 
@@ -44,7 +38,7 @@ function Home() {
           {/* Left Side - Image */}
           <div className="w-full lg:h-screen lg:w-1/2">
             <img
-              src={businesswoman}
+              src="/assets/about.jpg"
               alt="Businesswoman analyzing reports"
               className="w-full h-full rounded-lg shadow-lg"
               loading="lazy"
@@ -90,7 +84,7 @@ function Home() {
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src={businessman}
+              src="/assets/businessman.jpg"
               alt="Professional Billing"
               className="w-full rounded-lg shadow-lg"
             />

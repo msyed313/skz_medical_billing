@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import menuIcon from "../assets/menu.png";
-import closeIcon from "../assets/close.png";
-import logo from "../assets/react.svg";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +19,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
                 <div className="flex gap-2 text-xl font-bold text-gray-800 items-center">
-                    <img src={logo} className="w-10" alt="Logo" />
+                    <img src="/assets/logo.jpeg" className="w-10" alt="Logo" />
                     <p>SKZ Medical Billing</p>
                 </div>
 
@@ -96,7 +93,7 @@ const Header = () => {
 
                 {/* Mobile Menu Button */}
                 <button className="md:hidden bg-blue-800 p-2 rounded-md" onClick={() => setMenuOpen(!menuOpen)}>
-                    <img src={menuOpen ? closeIcon : menuIcon} className="w-8" alt="Menu" />
+                    <img src={menuOpen ? "/assets/close.png" : "/assets/menu.png"} className="w-8" alt="Menu" />
                 </button>
             </div>
 

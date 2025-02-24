@@ -1,29 +1,29 @@
 import React from 'react'
 const services = [
     {
-      img: '/vite.svg',
+      img: '/assets/revenue.png',
       service: 'Credentialing Services',
       description: 'Ensure your healthcare providers are credentialed with all major insurance networks, allowing them to be reimbursed for services rendered'
 
     },
     {
-      img: 'src/assets/more.png',
+      img: '/assets/more.png',
       service: 'Medical Coding',
       description: 'Accurate coding is crucial for ensuring proper reimbursement and compliance'
 
     },
     {
-      img: 'src/assets/clipboard.png',
+      img: '/assets/clipboard.png',
       service: 'Revenue Cycle Management',
       description: 'We manage every step of the revenue cycle, ensuring optimized cash flow for your practice'
     },
     {
-      img: 'src/assets/verified.png',
+      img: '/assets/verified.png',
       service: 'Billing and Follow Up Services',
       description: 'Ensure that your practice gets paid in full and on time with our complete billing and follow-up services'
     },
     {
-      img: 'src/assets/more.png',
+      img: '/assets/more.png',
       service: 'Compliance And Reporting',
       description: 'Stay ahead of the constantly evolving healthcare regulations with our compliance and reporting services'
     },

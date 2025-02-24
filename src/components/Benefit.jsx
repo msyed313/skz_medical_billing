@@ -3,11 +3,11 @@ import React from "react";
 
 const Benefit = () => {
   const features = [
-    { icon: 'src/assets/react.svg', title: "Experienced Team", desc: "Certified medical billers, coders, and credentialing specialists with years of hands-on experience." },
-    { icon: 'src/assets/react.svg', title: "Customized Solutions", desc: "Personalized services tailored to your specialty and practice size." },
-    { icon: 'src/assets/react.svg', title: "Maximized Revenue", desc: "We enhance cash flow by minimizing claim denials and ensuring faster reimbursements." },
-    { icon: 'src/assets/react.svg', title: "Compliance & Accuracy", desc: "We prioritize accuracy and compliance to reduce costly errors and audits." },
-    { icon: 'src/assets/react.svg', title: "Seamless Communication", desc: "Clear, transparent updates to keep you informed every step of the way." },
+    { icon: '/assets/react.svg', title: "Experienced Team", desc: "Certified medical billers, coders, and credentialing specialists with years of hands-on experience." },
+    { icon: '/assets/react.svg', title: "Customized Solutions", desc: "Personalized services tailored to your specialty and practice size." },
+    { icon: '/assets/react.svg', title: "Maximized Revenue", desc: "We enhance cash flow by minimizing claim denials and ensuring faster reimbursements." },
+    { icon: '/assets/react.svg', title: "Compliance & Accuracy", desc: "We prioritize accuracy and compliance to reduce costly errors and audits." },
+    { icon: '/assets/react.svg', title: "Seamless Communication", desc: "Clear, transparent updates to keep you informed every step of the way." },
   ];
 
   return (

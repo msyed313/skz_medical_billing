@@ -1,8 +1,4 @@
-import React from "react";
-import facebook from "../assets/facebook.png";
-import linkedin from "../assets/linkedin.png";
-import instagram from "../assets/instagram.png";
-import logo from "../assets/react.svg"; // Replace with your actual logo
+import React from "react"; // Replace with your actual logo
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -15,11 +11,11 @@ function Footer() {
     ];
 
     return (
-        <footer className="bg-gray-100 text-gray-700 py-10 px-6">
+        <footer className=" text-gray-700 py-10 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Company Info */}
                 <div className="flex flex-col md:items-start  md:text-left">
-                    <img src={logo} alt="Company Logo" className="w-32 h-auto mb-4" />
+                    <img src="/assets/logo.jpeg" alt="Company Logo" className="w-32 h-auto mb-4" />
                     <p className="text-lg text-justify leading-relaxed">
                         Our focus is on precision, efficiency, and personalized service. We
                         are dedicated to helping your practice succeed, allowing you to
@@ -52,13 +48,13 @@ function Footer() {
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-4">
                         <Link to="#" className="transition-transform hover:scale-110">
-                            <img src={facebook} alt="Facebook" className="w-8 h-8" />
+                            <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" />
                         </Link>
                         <Link to="#" className="transition-transform hover:scale-110">
-                            <img src={linkedin} alt="LinkedIn" className="w-8 h-8" />
+                            <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                         </Link>
                         <Link to="#" className="transition-transform hover:scale-110">
-                            <img src={instagram} alt="Instagram" className="w-8 h-8" />
+                            <img src="/assets/instagram.png" alt="Instagram" className="w-8 h-8" />
                         </Link>
                     </div>
                 </div>
