@@ -42,7 +42,7 @@ function Home() {
           {/* Left Side - Image */}
           <div className="w-full lg:h-screen lg:w-1/2">
             <img
-              src="src/assets/about.jpg"
+              src="assets/about.jpg"
               alt="Businesswoman analyzing reports"
               className="w-full h-full rounded-lg shadow-lg"
               loading="lazy"
@@ -88,7 +88,7 @@ function Home() {
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="src/assets/businessman.jpg"
+              src="assets/businessman.jpg"
               alt="Professional Billing"
               className="w-full rounded-lg shadow-lg"
             />
