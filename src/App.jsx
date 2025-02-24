@@ -21,7 +21,7 @@ function App() {
         <Route element={<Contact/>} path='/contact' />
         <Route element={<RCM/>} path='/revenue-cycle' />
         <Route element={<Credentialing/>} path='/credentialing' />
-        <Route element={<MedicalCoding/>} path='medical-coding' />
+        <Route element={<MedicalCoding/>} path='/medical-coding' />
      </Routes>
      <Footer/>
     </BrowserRouter>
