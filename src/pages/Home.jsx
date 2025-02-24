@@ -45,6 +45,7 @@ function Home() {
               src="src/assets/about.jpg"
               alt="Businesswoman analyzing reports"
               className="w-full h-full rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
 
