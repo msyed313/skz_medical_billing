@@ -4,17 +4,17 @@ import Component from '../components/Component'
 function Contact() {
     const contactDetails = [
         {
-            icon: "src/assets/react.svg",
+            icon: "assets/react.svg",
             title: "Address",
             content: "5729 savoy dr Houston tx 77036",
         },
         {
-            icon: "src/assets/react.svg",
+            icon: "assets/react.svg",
             title: "Email Us",
             content: "info@amityrcm.com",
         },
         {
-            icon: "src/assets/react.svg",
+            icon: "assets/react.svg",
             title: "Call Now",
             content: "(469) 722-7402",
         },

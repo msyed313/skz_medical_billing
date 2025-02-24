@@ -6,18 +6,18 @@ function About() {
 
     const card = [
         {
-            img: 'src/assets/react.svg',
+            img: 'assets/react.svg',
             title: 'Mission',
             des: 'Our mission is to empower healthcare organizations with seamless solutions, enhancing patient care, operational efficiency, and data-driven decision-making'
         },
         {
-            img: 'src/assets/react.svg',
+            img: 'assets/react.svg',
             title: 'Vision',
             des: 'We envision a future where advanced technology bridges the gap between healthcare providers and patients, ensuring quality service,  accurate diagnostics, and improved medical outcomes'
 
         },
         {
-            img: 'src/assets/react.svg',
+            img: 'assets/react.svg',
             title: 'HIPAA Complaint',
             des: 'Our platform adheres to the latest HIPAA regulations, ensuring patient data privacy, secure transactions, and compliance with industry standards'
 
@@ -33,7 +33,7 @@ function About() {
                     {/* Left Side - Image */}
                     <div className="w-full lg:h-screen  lg:w-1/2">
                         <img
-                            src="src/assets/about.jpg"
+                            src="assets/about.jpg"
                             alt="Businesswoman analyzing reports"
                             className="w-full h-full rounded-lg shadow-lg"
                             loading='lazy'
