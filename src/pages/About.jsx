@@ -1,6 +1,7 @@
 import React from 'react'
 import Component from '../components/Component'
 import Started from '../components/Started'
+import Benefit from '../components/Benefit'
 
 function About() {
 
@@ -36,7 +37,7 @@ function About() {
                             src="src/assets/about.jpg"
                             alt="Businesswoman analyzing reports"
                             className="w-full h-full rounded-lg shadow-lg"
-                            loading='lazy'
+                            loading="lazy"
                         />
                     </div>
 
@@ -99,7 +100,11 @@ function About() {
                     ))}
                 </div>
             </section>
-          
+           
+            {/* Why Choose Us */}
+
+             <Benefit/>
+
              {/* Contact Section */}
 
               <Started/>

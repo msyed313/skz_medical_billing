@@ -54,34 +54,34 @@ const Header = () => {
             ${servicesOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"}`}
                         >
                             <NavLink
-                                to="/services/service1"
-                                className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
-                            >
-                                Medical Billing Services
-                            </NavLink>
-                            <NavLink
-                                to="/services/service2"
+                                to="/revenue-cycle"
                                 className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
                             >
                                 Revenue Cycle Management
                             </NavLink>
                             <NavLink
-                                to="/services/service3"
+                                to="/credentialing"
                                 className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
                             >
-                                Patient Benefits & Eligibility Verification
+                                Credentialing
                             </NavLink>
                             <NavLink
-                                to="/services/service4"
+                                to="/medical-coding"
                                 className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
                             >
-                                Medical Credentialing Services
+                                Medical Coding
                             </NavLink>
                             <NavLink
-                                to="/services/service5"
+                                to="/billing-services"
                                 className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
                             >
-                                Grow With Us
+                                Billing & Follow-Up Services
+                            </NavLink>
+                            <NavLink
+                                to="/compliance-report"
+                                className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
+                            >
+                                Compliance and Reporting
                             </NavLink>
                         </div>
                     </div>
@@ -117,11 +117,11 @@ const Header = () => {
 
                         {/* Services Dropdown - Thoda Right Shifted */}
                         <div className={servicesOpen ? "flex flex-col mt-2 ml-6 p-2" : "hidden"}>
-                            <NavLink to="/services/service1" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Medical Billing Services</NavLink>
-                            <NavLink to="/services/service2" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Revenue Cycle Management</NavLink>
-                            <NavLink to="/services/service3" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Patient Benefits & Eligibility Verification</NavLink>
-                            <NavLink to="/services/service4" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Medical Credentialing Services</NavLink>
-                            <NavLink to="/services/service5" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Grow With US</NavLink>
+                            <NavLink to="/revenue-cycle" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Revenue Cycle Management</NavLink>
+                            <NavLink to="/credentialing" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Credentialing</NavLink>
+                            <NavLink to="/medical-coding" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Medical Coding</NavLink>
+                            <NavLink to="/billing-services" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Billing and Follow-Up Services</NavLink>
+                            <NavLink to="/compliance-report" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Compliance and Reporting</NavLink>
                         </div>
 
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>

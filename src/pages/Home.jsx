@@ -3,6 +3,7 @@ import background from "../assets/background.jpg";
 import { NavLink } from "react-router-dom";
 import Started from "../components/Started";
 import ServicesComponent from "../components/ServicesComponent";
+import Benefit from "../components/Benefit";
 
 function Home() {
 
@@ -124,6 +125,10 @@ function Home() {
         </div>
       </section>
 
+      {/* why choose us */}
+      
+       <Benefit/>
+    
       {/* Contact Section */}
 
       <Started />

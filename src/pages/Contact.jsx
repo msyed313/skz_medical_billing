@@ -31,7 +31,7 @@ function Contact() {
 
     const [errors, setErrors] = useState({});
 
-    const services = ["Web Development", "Mobile App Development", "SEO Optimization", "UI/UX Design", "Digital Marketing"];
+    const services = ["RCM", "Credentialing", "Medical Coding", "Biling & Follow-Up Services", "Compliance & Reporting"];
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
