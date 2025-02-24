@@ -114,11 +114,11 @@ const Header = () => {
 
                         {/* Services Dropdown - Thoda Right Shifted */}
                         <div className={servicesOpen ? "flex flex-col mt-2 ml-6 p-2" : "hidden"}>
-                            <NavLink to="/revenue-cycle" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Revenue Cycle Management</NavLink>
-                            <NavLink to="/credentialing" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Credentialing</NavLink>
-                            <NavLink to="/medical-coding" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Medical Coding</NavLink>
-                            <NavLink to="/billing-services" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Billing and Follow-Up Services</NavLink>
-                            <NavLink to="/compliance-report" onClick={() => [setMenuOpen(false), servicesOpen(false)]} className="block px-4 py-2 font-semibold">Compliance and Reporting</NavLink>
+                            <NavLink to="/revenue-cycle" onClick={() => {setMenuOpen(false), servicesOpen(false)}} className="block px-4 py-2 font-semibold">Revenue Cycle Management</NavLink>
+                            <NavLink to="/credentialing" onClick={() => {setMenuOpen(false), servicesOpen(false)}} className="block px-4 py-2 font-semibold">Credentialing</NavLink>
+                            <NavLink to="/medical-coding" onClick={() => {setMenuOpen(false), servicesOpen(false)}} className="block px-4 py-2 font-semibold">Medical Coding</NavLink>
+                            <NavLink to="/billing-services" onClick={() => {setMenuOpen(false), servicesOpen(false)}} className="block px-4 py-2 font-semibold">Billing and Follow-Up Services</NavLink>
+                            <NavLink to="/compliance-report" onClick={() => {setMenuOpen(false), servicesOpen(false)}} className="block px-4 py-2 font-semibold">Compliance and Reporting</NavLink>
                         </div>
 
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
