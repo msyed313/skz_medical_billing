@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import menuIcon from "../assets/menu.png";
-import closeIcon from "../assets/close.png";
-import logo from "../assets/react.svg";
+import menuIcon from "/assets/menu.png";
+import closeIcon from "/assets/close.png";
+import logo from "/assets/react.svg";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);

@@ -1,8 +1,8 @@
 import React from "react";
-import facebook from "../assets/facebook.png";
-import linkedin from "../assets/linkedin.png";
-import instagram from "../assets/instagram.png";
-import logo from "../assets/react.svg"; // Replace with your actual logo
+import facebook from "/assets/facebook.png";
+import linkedin from "/assets/linkedin.png";
+import instagram from "/assets/instagram.png";
+import logo from "/assets/react.svg"; // Replace with your actual logo
 import { Link } from "react-router-dom";
 
 function Footer() {
