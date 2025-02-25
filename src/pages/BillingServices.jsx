@@ -1,7 +1,7 @@
 import React from 'react'
 import Component from '../components/Component'
 import Started from '../components/Started'
-
+import OurServicesComponent from '../components/OurServicesComponent';
 function BillingServices() {
     const features = [
         {
@@ -10,34 +10,28 @@ function BillingServices() {
         },
         {
             title: "Denial Management ",
-            desc:
-                "Our certified coders accurately translate medical services into standardized codes, preventing costly errors.",
+            desc:"Our team reviews and corrects denied claims to ensure reimbursement"
+                },
+        {
+            title: "Insurance Follow-Ups",
+            desc:"We proactively communicate with insurers to track and resolve pending payments"
         },
         {
-            title: "Claims Submission & Tracking",
-            desc:
-                "We submit claims promptly and monitor their progress, addressing any issues that may cause delays in payments.",
+            title: "Patient Billing Assistance",
+            desc:" Clear, transparent billing helps minimize confusion and payment delays"
         },
         {
-            title: "Denial Management & Appeals",
-            desc:
-                "If a claim is denied, our team immediately investigates and resubmits it, ensuring you receive the revenue you deserve.",
-        },
-        {
-            title: "Payment Posting & Reconciliation",
-            desc:
-                "We track payments, post them accurately, and reconcile accounts to maintain financial transparency.",
-        },
-        {
-            title: "Patient Billing & Support",
-            desc:
-                "We handle patient statements and inquiries, making it easy for patients to understand their bills and complete payments.",
-        },
+            title: "Maximized Reimbursements",
+            desc:" We ensure you receive the full amount owed for services provided"
+        }
     ];
   return (
     <>
         <Component name="Billing and Follow Up Services" />
      
+        <OurServicesComponent data={features} name="Billing and Follow Up Services" 
+              desc="Ensure that your practice gets paid in full and on time with our complete billing and follow-up services"
+            />
 
         <Started/>
     </>

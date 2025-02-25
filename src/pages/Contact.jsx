@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
 import Component from '../components/Component'
-
 function Contact() {
     const contactDetails = [
         {
-            icon: "src/assets/react.svg",
+            icon: "/assets/pin.png",
             title: "Address",
             content: "5729 savoy dr Houston tx 77036",
         },
         {
-            icon: "src/assets/react.svg",
+            icon: "/assets/email.png",
             title: "Email Us",
-            content: "info@amityrcm.com",
+            content: "skzmedicalbilling@gmail.com",
         },
         {
-            icon: "src/assets/react.svg",
+            icon: "/assets/telephone.png",
             title: "Call Now",
-            content: "(469) 722-7402",
+            content: "(469) 733-6551",
         },
     ];
     const [formData, setFormData] = useState({
@@ -54,10 +53,8 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            console.log("Form Data Submitted:", formData);
-            alert("Form submitted successfully!");
-            setFormData({ firstName: "", lastName: "", email: "", phone: "", speciality: "", service: "", message: "" });
-            setErrors({});
+            console.log(formData);
+            
         }
     };
     return (
@@ -71,8 +68,8 @@ function Contact() {
                             key={index}
                             className="bg-white shadow-lg rounded-2xl p-6 text-center flex flex-col items-center"
                         >
-                            <div className="bg-gray-100 rounded-full p-4 flex items-center justify-center">
-                                <img src={item.icon} />
+                            <div className="bg-gray-100 w-20 rounded-full p-4 flex items-center justify-center">
+                                <img src={item.icon}  className='w-full'/>
                             </div>
                             <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
                             <p className="text-gray-600 text-sm mt-2">{item.content}</p>
@@ -87,7 +84,7 @@ function Contact() {
                 <div className=" p-8 max-w-4xl w-full">
                     {/* Header */}
                     <div className="text-center mb-6">
-                        <button className="bg-blue-600 text-white px-6 py-2 rounded-full text-xl font-semibold">
+                        <button className="bg-[#0097B2] text-white px-6 py-2 rounded-full text-xl font-semibold">
                             Appointment Now
                         </button>
                         <h2 className="text-3xl font-bold text-blue-700 mt-4">Free Consultation</h2>
@@ -151,7 +148,7 @@ function Contact() {
                             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
                         </div>
 
-                        {/* Company Name */}
+                        {/* Speciality */}
                         <div>
                             <label className="block font-medium">Speciality</label>
                             <input
@@ -198,7 +195,7 @@ function Contact() {
                         <div className="md:col-span-2 flex justify-center">
                             <button
                                 type="submit"
-                                className="bg-blue-600 text-white px-6 py-2 rounded-full text-lg font-semibold w-full md:w-auto"
+                                className="bg-[#0097B2] cursor-pointer text-white px-8 py-2 rounded-full text-xl font-semibold w-full md:w-auto"
                             >
                                 Submit
                             </button>
@@ -216,7 +213,7 @@ function Contact() {
                         loading="lazy"
                         allowFullScreen
                         referrerPolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6929.99066661964!2d-95.50809762538202!3d29.71989443387658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c24cc130d133%3A0x5b56589803e3614f!2s5729%20Savoy%20Dr%2C%20Houston%2C%20TX%2077036!5e0!3m2!1sen!2sus!4v1740399957351!5m2!1sen!2sus" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6929.99066661964!2d-95.50809762538202!3d29.71989443387658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c24cc130d133%3A0x5b56589803e3614f!2s5729%20Savoy%20Dr%2C%20Houston%2C%20TX%2077036!5e0!3m2!1sen!2sus!4v1740399957351!5m2!1sen!2sus"
                     ></iframe>
                 </div>
             </section>

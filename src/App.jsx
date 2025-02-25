@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import RCM from './pages/RCM'
 import Credentialing from './pages/Credentialing'
 import MedicalCoding from './pages/MedicalCoding'
+import BillingServices from './pages/BillingServices'
+import CReport from './pages/CReport'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route element={<RCM/>} path='/revenue-cycle' />
         <Route element={<Credentialing/>} path='/credentialing' />
         <Route element={<MedicalCoding/>} path='/medical-coding' />
+        <Route element={<BillingServices/>} path='/billing-services' />
+        <Route element={<CReport/>} path='/compliance-report' />
      </Routes>
      <Footer/>
     </BrowserRouter>

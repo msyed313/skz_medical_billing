@@ -85,15 +85,15 @@ const Header = () => {
 
 
                     <NavLink to="/contact">
-                        <button className="bg-blue-600 font-semibold text-xl text-white px-4 py-2 rounded-md hover:bg-blue-800 cursor-pointer">
+                        <button className="bg-[#0097B2] hover:bg-[#006080] font-semibold text-xl text-white px-4 py-2 rounded-md  cursor-pointer">
                             Contact Us
                         </button>
                     </NavLink>
                 </nav>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden bg-blue-800 p-2 rounded-md" onClick={() => setMenuOpen(!menuOpen)}>
-                    <img src={menuOpen ? "/assets/close.png" : "/assets/menu.png"} className="w-8" alt="Menu" />
+                <button className="md:hidden bg-[#0097B2] hover:bg-[#006080] p-2 rounded-md" onClick={() => setMenuOpen(!menuOpen)}>
+                    <img src={menuOpen ? "/assets/close.png" : "/assets/menu.png"} className="w-6" alt="Menu" />
                 </button>
             </div>
 
@@ -122,7 +122,7 @@ const Header = () => {
                         </div>
 
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
-                            <button className="bg-blue-600 text-lg font-semibold text-white px-4 py-2 rounded-md hover:bg-blue-800">
+                            <button className="bg-[#0097B2] hover:bg-[#006080] text-lg font-semibold text-white px-4 py-2 rounded-md ">
                                 Contact Us
                             </button>
                         </NavLink>

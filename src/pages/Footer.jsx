@@ -43,7 +43,7 @@ function Footer() {
                     <p className="text-lg my-2">6860 North Dallas Pkwy, Suite 200</p>
                     <p className="text-lg my-2">Plano, TX 75024</p>
                     <p className="text-lg my-2">📞 (469) 733-6551</p>
-                    <p className="text-lg my-2">✉️ info@amityrcm.com</p>
+                    <p className="text-lg my-2">✉️ skzmedicalbilling@gmail.com</p>
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-4">

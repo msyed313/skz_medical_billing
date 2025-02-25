@@ -3,11 +3,11 @@ import React from "react";
 
 const Benefit = () => {
   const features = [
-    { icon: '/assets/react.svg', title: "Experienced Team", desc: "Certified medical billers, coders, and credentialing specialists with years of hands-on experience." },
-    { icon: '/assets/react.svg', title: "Customized Solutions", desc: "Personalized services tailored to your specialty and practice size." },
-    { icon: '/assets/react.svg', title: "Maximized Revenue", desc: "We enhance cash flow by minimizing claim denials and ensuring faster reimbursements." },
-    { icon: '/assets/react.svg', title: "Compliance & Accuracy", desc: "We prioritize accuracy and compliance to reduce costly errors and audits." },
-    { icon: '/assets/react.svg', title: "Seamless Communication", desc: "Clear, transparent updates to keep you informed every step of the way." },
+    { icon: '/assets/experience.png', title: "Experienced Team", desc: "Certified medical billers, coders, and credentialing specialists with years of hands-on experience." },
+    { icon: '/assets/puzzle.png', title: "Customized Solutions", desc: "Personalized services tailored to your specialty and practice size." },
+    { icon: '/assets/profit.png', title: "Maximized Revenue", desc: "We enhance cash flow by minimizing claim denials and ensuring faster reimbursements." },
+    { icon: '/assets/file.png', title: "Compliance & Accuracy", desc: "We prioritize accuracy and compliance to reduce costly errors and audits." },
+    { icon: '/assets/world.png', title: "Seamless Communication", desc: "Clear, transparent updates to keep you informed every step of the way." },
   ];
 
   return (
@@ -19,8 +19,8 @@ const Benefit = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4">
-               <img src={feature.icon} />
+            <div key={index} className="bg-white p-6  rounded-lg shadow-md flex items-center space-x-4">
+               <img src={feature.icon} className="w-1/5" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
                 <p className="text-gray-600 text-sm">{feature.desc}</p>

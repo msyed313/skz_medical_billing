@@ -19,7 +19,7 @@ function Started() {
           <div className="mt-4 md:mt-0">
             <NavLink
               to="/contact"
-              className="flex items-center gap-2 bg-[#0079A1] hover:bg-[#006080] text-white text-xl font-semibold px-6 py-3 rounded-lg shadow-md transition focus:outline-none focus:ring-2 focus:ring-[#005B80]">
+              className="flex items-center gap-2 bg-[#0097B2]  hover:bg-[#006080] text-white text-xl font-semibold px-6 py-3 rounded-lg shadow-md transition focus:outline-none focus:ring-2 focus:ring-[#005B80]">
 
               Contact Us
             </NavLink>

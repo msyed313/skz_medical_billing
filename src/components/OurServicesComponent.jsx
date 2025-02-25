@@ -23,7 +23,7 @@ function OurServicesComponent({data,name,desc}) {
                 <div className="mt-10">
                     <a
                         href="/contact"
-                        className="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300"
+                        className="bg-[#0097B2] hover:bg-[#006080] cursor-pointer text-white py-3 px-6 rounded-lg text-lg font-semibold transition duration-300"
                     >
                         Get Started Today
                     </a>
