@@ -15,7 +15,7 @@ function Footer() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Company Info */}
                 <div className="flex flex-col md:items-start  md:text-left">
-                    <img src="/assets/logo.jpeg" alt="Company Logo" className="w-32 h-auto mb-4" />
+                    <img src="/assets/logo.png" alt="Company Logo" className="w-32 h-auto mb-4" />
                     <p className="text-lg text-justify leading-relaxed">
                         Our focus is on precision, efficiency, and personalized service. We
                         are dedicated to helping your practice succeed, allowing you to

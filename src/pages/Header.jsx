@@ -19,13 +19,13 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
                 <div className="flex gap-2 text-xl font-bold text-gray-800 items-center">
-                    <img src="/assets/logo.jpeg" className="w-10" alt="Logo" />
+                    <img src="/assets/logo.png" className="w-10" alt="Logo" />
                     <p>SKZ Medical Billing</p>
                 </div>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6 text-gray-600 items-center">
-                    <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-800 font-semibold text-xl" : "hover:text-blue-800 font-semibold text-xl"}>Home</NavLink>
+                    <NavLink to="/home" className={({ isActive }) => isActive ? "text-blue-800 font-semibold text-xl" : "hover:text-blue-800 font-semibold text-xl"}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-800 font-semibold text-xl" : "hover:text-blue-800 font-semibold text-xl"}>About Us</NavLink>
 
                     {/* Services Dropdown (Desktop) */}
@@ -101,7 +101,7 @@ const Header = () => {
             {menuOpen && (
                 <div className="md:hidden bg-white shadow-md py-4">
                     <nav className="flex flex-col px-6 space-y-4">
-                        <NavLink className="text-lg font-semibold" to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+                        <NavLink className="text-lg font-semibold" to="/home" onClick={() => setMenuOpen(false)}>Home</NavLink>
                         <NavLink className="text-lg font-semibold" to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
 
                         {/* Mobile Services Dropdown */}
