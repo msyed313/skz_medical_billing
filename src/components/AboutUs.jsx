@@ -7,11 +7,11 @@ function AboutUs() {
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
 
                 {/* Left Side - Image */}
-                <div className="w-full lg:h-screen  lg:w-1/2">
+                <div className="w-full   lg:w-1/2">
                     <img
-                        src="/assets/about.jpg"
+                        src="/assets/businesswoman.jpg"
                         alt="Businesswoman analyzing reports"
-                        className="w-full h-full rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+                        className="w-full  rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
                         loading="lazy"
                     />
                 </div>
