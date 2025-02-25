@@ -47,13 +47,13 @@ function Footer() {
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-4">
-                        <Link to="#" className="transition-transform hover:scale-110">
+                        {/* <Link to="#" className="transition-transform hover:scale-110">
                             <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" />
-                        </Link>
+                        </Link> */}
                         <Link to="#" className="transition-transform hover:scale-110">
                             <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                         </Link>
-                        <Link to="#" className="transition-transform hover:scale-110">
+                        <Link to="https://www.instagram.com/skzmedbilling/" className="transition-transform hover:scale-110">
                             <img src="/assets/instagram.png" alt="Instagram" className="w-8 h-8" />
                         </Link>
                     </div>
