@@ -25,7 +25,7 @@ function WelcomeScreen() {
 
     return (
         <div className={`welcome-screen ${fadeOut ? "fade-out" : ""}`}>
-            <img src="/assets/logo.png" alt="Logo" className="logo max-w-96 rounded-2xl border-r-transparent" />
+            <img src="/assets/logo.png" alt="Logo" className="logo max-w-80 rounded-2xl border-r-transparent" />
             <h1 className="text-white lg:text-5xl md:text-3xl text-xl font-bold mt-3">Welcome to Our Website</h1>
             <p className="text-lg font-semibold mt-3">Get ready for an amazing experience 🚀</p>
         </div>
