@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Component from '../components/Component'
+import emailjs from "emailjs-com";
 function Contact() {
     const contactDetails = [
         {
@@ -53,8 +54,21 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            console.log(formData);
-            
+            emailjs.send(
+                "service_bi9lksm", // Replace with your EmailJS service ID
+                "template_wrksvpb", // Replace with your EmailJS template ID
+                formData,
+                "9I_sLuX1PbwFVhR6I" // Replace with your EmailJS public key (user ID)
+            )
+                .then((response) => {
+                    alert("Message sent successfully!");
+                    setFormData({ firstName: "", email: "", lastName: "", speciality: "", service: "", phone: "", message: "" });
+                })
+                .catch((error) => {
+                    alert("Error sending message!");
+                    console.log("EmailJS Error:", error);
+                });
+
         }
     };
     return (
@@ -69,7 +83,7 @@ function Contact() {
                             className="bg-white shadow-lg rounded-2xl p-6 text-center flex flex-col items-center"
                         >
                             <div className="bg-gray-100 w-20 rounded-full p-4 flex items-center justify-center">
-                                <img src={item.icon}  className='w-full'/>
+                                <img src={item.icon} className='w-full' />
                             </div>
                             <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
                             <p className="text-gray-600 text-sm mt-2">{item.content}</p>
@@ -149,7 +163,7 @@ function Contact() {
                         </div>
 
                         {/* Speciality */}
-                        <div>
+                        {/* <div>
                             <label className="block font-medium">Speciality</label>
                             <input
                                 type="text"
@@ -158,7 +172,7 @@ function Contact() {
                                 onChange={handleChange}
                                 className="w-full p-2 border rounded"
                             />
-                        </div>
+                        </div> */}
 
                         {/* Services (Dropdown) */}
                         <div>
@@ -217,6 +231,8 @@ function Contact() {
                     ></iframe>
                 </div>
             </section>
+
+
 
         </>
     )
