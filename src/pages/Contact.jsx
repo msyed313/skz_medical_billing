@@ -7,16 +7,19 @@ function Contact() {
             icon: "/assets/pin.png",
             title: "Address",
             content: "5729 savoy dr Houston tx 77036",
+            ref:"https://www.google.com/maps/search/?api=1&query=5729+Savoy+Dr,+Houston,+TX+77036"
         },
         {
             icon: "/assets/email.png",
             title: "Email Us",
             content: "skzmedicalbilling@gmail.com",
+            ref:"mailto:skzmedicalbilling@gmail.com"
         },
         {
             icon: "/assets/telephone.png",
             title: "Call Now",
             content: "(469) 733-6551",
+            ref:"tel:+14697336551"
         },
     ];
     const [formData, setFormData] = useState({
@@ -86,7 +89,7 @@ function Contact() {
                                 <img src={item.icon} className='w-full' />
                             </div>
                             <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
-                            <p className="text-gray-600 text-sm mt-2">{item.content}</p>
+                            <a href={item.ref} className="text-[#0097B2] hover:text-[#006080]  mt-2">{item.content}</a>
                         </div>
                     ))}
                 </div>

@@ -17,7 +17,7 @@ function Home() {
             Make your life simpler with
           </h1>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0097B2] mt-2">
-            SZK Medical Solutions
+            SKZ Medical Solutions
           </h2>
           <p className="text-lg text-gray-700 mt-4">
             Best healthcare solutions provider for the Hospitals & Medical industry.
@@ -65,11 +65,11 @@ function Home() {
             </h2>
             <ul className="mt-6 space-y-4">
               {[
-                "Certified billing professionals delivering top-notch services and industry updates.",
-                "Tailored services to meet each practice's unique needs for optimal outcomes.",
-                "Utilizing cutting-edge billing software to streamline processes and enhance accuracy.",
-                "Actively managing claims and follow-ups to ensure timely payments.",
-                "Clear communication with regular updates and detailed reports.",
+                "Experienced billing experts providing high-quality services and the latest industry insights",
+                "Customized solutions designed to meet the specific needs of each practice for maximum efficiency",
+                "Leveraging advanced billing technology to simplify workflows and improve precision",
+                "Proactively handling claims and follow-ups to guarantee prompt reimbursements",
+                "Transparent communication with consistent updates and comprehensive reporting",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3 text-gray-700">
                   <span className="text-[#0097B2] text-xl">✔</span>

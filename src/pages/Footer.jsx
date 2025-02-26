@@ -17,9 +17,7 @@ function Footer() {
                 <div className="flex flex-col md:items-start  md:text-left">
                     <img src="/assets/logo.png" alt="Company Logo" className="w-32 h-auto mb-4" />
                     <p className="text-lg text-justify leading-relaxed">
-                        Our focus is on precision, efficiency, and personalized service. We
-                        are dedicated to helping your practice succeed, allowing you to
-                        concentrate on delivering exceptional care to your patients.
+                    We prioritize accuracy, efficiency, and customized solutions, ensuring your practice thrives while you focus on providing outstanding patient care
                     </p>
                 </div>
 
@@ -72,7 +70,7 @@ function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="text-center text-sm text-gray-500 mt-8 border-t pt-4">
+            <div className="text-center text-lg text-gray-500 mt-8 border-t pt-4">
                 Copyright © {new Date().getFullYear()} | All Rights Reserved.
             </div>
         </footer>

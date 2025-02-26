@@ -13,7 +13,7 @@ function OurServicesComponent({data,name,desc}) {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                     {data.map((item, index) => (
                         <div key={index} className="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all">
-                            <h3 className="text-xl font-semibold text-blue-600">{item.title}</h3>
+                            <h3 className="text-xl font-semibold text-[#0097B2]">{item.title}</h3>
                             <p className="text-gray-600 mt-2">{item.desc}</p>
                         </div>
                     ))}
