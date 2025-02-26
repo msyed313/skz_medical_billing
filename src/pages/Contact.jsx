@@ -31,7 +31,7 @@ function Contact() {
 
     const [errors, setErrors] = useState({});
 
-    const services = ["RCM", "Credentialing", "Medical Coding", "Biling & Follow-Up Services", "Compliance & Reporting"];
+    const services = ["RCM", "Credentialing", "Medical Coding", "Biling & Follow-Up Services", "Compliance & Reporting","Dental"];
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -101,7 +101,7 @@ function Contact() {
                         <button className="bg-[#0097B2] text-white px-6 py-2 rounded-full text-xl font-semibold">
                             Appointment Now
                         </button>
-                        <h2 className="text-3xl font-bold text-blue-700 mt-4">Free Consultation</h2>
+                        <h2 className="text-3xl font-bold text-[#0097B2] mt-4">Free Consultation</h2>
                         <h3 className="text-lg font-semibold text-gray-800 mt-2">Schedule an Appointment</h3>
                         <p className="text-gray-600 mt-2">
                             Interested in learning more about our services? Reach out to us below!
@@ -112,7 +112,7 @@ function Contact() {
                     <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         {/* First Name */}
                         <div>
-                            <label className="block font-medium">First Name*</label>
+                            <label className="block font-medium">First Name<span className='text-red-600'>*</span></label>
                             <input
                                 type="text"
                                 name="firstName"
@@ -125,7 +125,7 @@ function Contact() {
 
                         {/* Last Name */}
                         <div>
-                            <label className="block font-medium">Last Name*</label>
+                            <label className="block font-medium">Last Name<span className='text-red-600'>*</span></label>
                             <input
                                 type="text"
                                 name="lastName"
@@ -138,7 +138,7 @@ function Contact() {
 
                         {/* Email */}
                         <div>
-                            <label className="block font-medium">Email*</label>
+                            <label className="block font-medium">Email<span className='text-red-600'>*</span></label>
                             <input
                                 type="email"
                                 name="email"
@@ -151,7 +151,7 @@ function Contact() {
 
                         {/* Phone */}
                         <div>
-                            <label className="block font-medium">Phone Number*</label>
+                            <label className="block font-medium">Phone Number<span className='text-red-600'>*</span></label>
                             <input
                                 type="text"
                                 name="phone"
@@ -176,7 +176,7 @@ function Contact() {
 
                         {/* Services (Dropdown) */}
                         <div>
-                            <label className="block font-medium">Select a Service*</label>
+                            <label className="block font-medium">Select a Service<span className='text-red-600'>*</span></label>
                             <select
                                 name="service"
                                 value={formData.service}

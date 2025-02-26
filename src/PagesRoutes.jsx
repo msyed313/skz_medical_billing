@@ -12,6 +12,7 @@ import MedicalCoding from './pages/MedicalCoding';
 import BillingServices from './pages/BillingServices';
 import CReport from './pages/CReport';
 import WelcomeScreen from './pages/welcome/WelcomeScreen';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function PagesRoutes() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function PagesRoutes() {
         <Route element={<MedicalCoding />} path="/medical-coding" />
         <Route element={<BillingServices />} path="/billing-services" />
         <Route element={<CReport />} path="/compliance-report" />
+        <Route element={<PrivacyPolicy/>} path='/privacy-policy' />
       </Routes>
 
       {!isWelcomeScreen && <Footer />}

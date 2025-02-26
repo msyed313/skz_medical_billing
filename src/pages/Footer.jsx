@@ -40,10 +40,21 @@ function Footer() {
                 {/* Contact Section */}
                 <div className="flex flex-col md:items-start">
                     <h3 className="font-semibold text-2xl mb-3">Contact</h3>
-                    <p className="text-lg my-2">6860 North Dallas Pkwy, Suite 200</p>
-                    <p className="text-lg my-2">Plano, TX 75024</p>
-                    <p className="text-lg my-2">📞 (469) 733-6551</p>
-                    <p className="text-lg my-2">✉️ skzmedicalbilling@gmail.com</p>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=5729+Savoy+Dr,+Houston,+TX+77036"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#0097B2] hover:text-[#006080]"
+                    >
+                        <p className="my-2">5729 Savoy Dr, Houston, TX 77036</p>
+                    </a>
+
+
+                    <a href="tel:+14697336551" className="text-[#0097B2] hover:text-[#006080]"><p className=" my-2">📞 (469) 733-6551</p></a>
+                    <a href="mailto:skzmedicalbilling@gmail.com"
+                        className="text-[#0097B2] hover:text-[#006080]">
+                        <p className=" my-2">✉️ skzmedicalbilling@gmail.com</p>
+                    </a>
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-4">

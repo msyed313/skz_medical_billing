@@ -16,7 +16,7 @@ function Home() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Make your life simpler with
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mt-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0097B2] mt-2">
             SZK Medical Solutions
           </h2>
           <p className="text-lg text-gray-700 mt-4">
