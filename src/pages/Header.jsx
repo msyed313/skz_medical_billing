@@ -18,10 +18,10 @@ const Header = () => {
         <header className="bg-white shadow-md sticky top-0 z-50">
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
-                <div className="flex gap-2 text-xl font-bold text-gray-800 items-center">
+                <NavLink to="/home" className="flex gap-2 text-xl font-bold text-gray-800 items-center">
                     <img src="/assets/logo.png" className="w-10" alt="Logo" />
                     <p>SKZ Medical Billing</p>
-                </div>
+                </NavLink>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6 text-gray-600 items-center">
