@@ -59,7 +59,7 @@ function Footer() {
                         {/* <Link to="#" className="transition-transform hover:scale-110">
                             <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" />
                         </Link> */}
-                        <Link to="#" className="transition-transform hover:scale-110">
+                        <Link to="https://www.linkedin.com/in/skz-billing-9b5352353/" className="transition-transform hover:scale-110">
                             <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
                         </Link>
                         <Link to="https://www.instagram.com/skzmedbilling/" className="transition-transform hover:scale-110">
