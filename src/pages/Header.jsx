@@ -80,6 +80,12 @@ const Header = () => {
                             >
                                 Compliance and Reporting
                             </NavLink>
+                            <NavLink
+                                to="/dental-service"
+                                className="block px-4 py-2 text-lg font-semibold hover:text-blue-800 rounded-md"
+                            >
+                                Dental
+                            </NavLink>
                         </div>
                     </div>
 
@@ -119,6 +125,7 @@ const Header = () => {
                             <NavLink to="/medical-coding" onClick={() => setMenuOpen(false)} className="block px-4 py-2 font-semibold">Medical Coding</NavLink>
                             <NavLink to="/billing-services" onClick={() => setMenuOpen(false)} className="block px-4 py-2 font-semibold">Billing and Follow-Up Services</NavLink>
                             <NavLink to="/compliance-report" onClick={() => setMenuOpen(false)} className="block px-4 py-2 font-semibold">Compliance and Reporting</NavLink>
+                            <NavLink to="/dental-service" onClick={() => setMenuOpen(false)} className="block px-4 py-2 font-semibold">Dental</NavLink>
                         </div>
 
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>

@@ -32,6 +32,12 @@ const services = [
     description: 'Stay ahead of the constantly evolving healthcare regulations with our compliance and reporting services',
     link: '/compliance-report'
   },
+  {
+    img: '/assets/dental.png',
+    service: 'Dental',
+    description: ' Our expert team ensures accurate, timely reimbursements, helping dental practices focus on patient care instead of paperwork',
+    link: '/dental-service'
+  },
 ]
 function ServicesComponent() {
   return (

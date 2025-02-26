@@ -13,6 +13,7 @@ import BillingServices from './pages/BillingServices';
 import CReport from './pages/CReport';
 import WelcomeScreen from './pages/welcome/WelcomeScreen';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Dental from './pages/Dental';
 
 function PagesRoutes() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function PagesRoutes() {
         <Route element={<BillingServices />} path="/billing-services" />
         <Route element={<CReport />} path="/compliance-report" />
         <Route element={<PrivacyPolicy/>} path='/privacy-policy' />
+        <Route element={<Dental/>} path='/dental-service' />
       </Routes>
 
       {!isWelcomeScreen && <Footer />}

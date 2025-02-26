@@ -58,10 +58,10 @@ function Contact() {
         e.preventDefault();
         if (validateForm()) {
             emailjs.send(
-                "service_bi9lksm", // Replace with your EmailJS service ID
-                "template_wrksvpb", // Replace with your EmailJS template ID
+                "service_u9h8ris", // Replace with your EmailJS service ID
+                "template_f6rvgzk", // Replace with your EmailJS template ID
                 formData,
-                "9I_sLuX1PbwFVhR6I" // Replace with your EmailJS public key (user ID)
+                "-XDC2AnJLT1rsJY3E" // Replace with your EmailJS public key (user ID)
             )
                 .then((response) => {
                     alert("Message sent successfully!");
@@ -164,18 +164,6 @@ function Contact() {
                             />
                             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
                         </div>
-
-                        {/* Speciality */}
-                        {/* <div>
-                            <label className="block font-medium">Speciality</label>
-                            <input
-                                type="text"
-                                name="company"
-                                value={formData.speciality}
-                                onChange={handleChange}
-                                className="w-full p-2 border rounded"
-                            />
-                        </div> */}
 
                         {/* Services (Dropdown) */}
                         <div>
