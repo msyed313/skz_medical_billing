@@ -27,7 +27,6 @@ function Contact() {
         lastName: "",
         email: "",
         phone: "",
-        speciality: "",
         service: "",
         message: "",
     });
@@ -65,7 +64,7 @@ function Contact() {
             )
                 .then((response) => {
                     alert("Message sent successfully!");
-                    setFormData({ firstName: "", email: "", lastName: "", speciality: "", service: "", phone: "", message: "" });
+                    setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
                 })
                 .catch((error) => {
                     alert("Error sending message!");
