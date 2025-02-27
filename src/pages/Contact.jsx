@@ -75,7 +75,7 @@ function Contact() {
                 // You'll need to sign up at https://www.emailjs.com/ and create these
                 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ;
                 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ;
-                const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ;
+                const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY|| '-XDC2AnJLT1rsJY3E' ;
 
                 await emailjs.send(
                     serviceId,
