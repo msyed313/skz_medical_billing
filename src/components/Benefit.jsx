@@ -20,7 +20,7 @@ const Benefit = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div key={index} className="bg-white p-6  rounded-lg shadow-md flex items-center space-x-4">
-               <img src={feature.icon} className="w-1/5" />
+               <img src={feature.icon} className="w-1/5" loading="lazy" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
                 <p className="text-gray-600 text-sm">{feature.desc}</p>

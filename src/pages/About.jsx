@@ -55,6 +55,7 @@ function About() {
                                 src={item.img}
                                 alt="Mission"
                                 className="w-20 mx-auto"
+                                loading="lazy"
                             />
                             <h3 className="text-xl font-bold mt-4">{item.title}</h3>
                             <p className="text-gray-600 text-lg mt-2">

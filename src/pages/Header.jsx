@@ -19,7 +19,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
                 <NavLink to="/home" className="flex gap-2 text-xl font-bold text-gray-800 items-center">
-                    <img src="/assets/logo.png" className="w-10" alt="Logo" />
+                    <img src="/assets/logo.png" className="w-10" alt="Logo" loading="lazy" />
                     <p>SKZ Medical Billing</p>
                 </NavLink>
 
@@ -99,7 +99,7 @@ const Header = () => {
 
                 {/* Mobile Menu Button */}
                 <button className="md:hidden bg-[#0097B2] hover:bg-[#006080] p-2 rounded-md" onClick={() => setMenuOpen(!menuOpen)}>
-                    <img src={menuOpen ? "/assets/close.png" : "/assets/menu.png"} className="w-6" alt="Menu" />
+                    <img src={menuOpen ? "/assets/close.png" : "/assets/menu.png"} className="w-6" alt="Menu" loading="lazy" />
                 </button>
             </div>
 

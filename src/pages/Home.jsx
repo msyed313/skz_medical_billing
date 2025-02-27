@@ -51,7 +51,8 @@ function Home() {
               src="/assets/businessman.jpg"
               alt="Professional Billing"
               className="w-full rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105"
-            />
+              loading="lazy"
+           />
           </div>
 
           {/* Right Side - Content */}

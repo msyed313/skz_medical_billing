@@ -59,7 +59,7 @@ function ServicesComponent() {
             >
               {/* Image Wrapper */}
               <div className="w-32 text-white flex items-center justify-center rounded-full text-xl font-bold">
-                <img src={item.img} className="w-1/2 h-full object-contain" />
+                <img src={item.img} className="w-1/2 h-full object-contain" loading="lazy" />
               </div>
 
               {/* Text Content */}

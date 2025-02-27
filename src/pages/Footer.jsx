@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     const links = [
-        { name: "Home", link: "/" },
+        { name: "Home", link: "/home" },
         { name: "About Us", link: "/about" },
         { name: "Services", link: "/services" },
         { name: "Contact Us", link: "/contact" },
@@ -15,7 +15,7 @@ function Footer() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Company Info */}
                 <div className="flex flex-col md:items-start  md:text-left">
-                    <img src="/assets/logo.png" alt="Company Logo" className="w-32 h-auto mb-4" />
+                    <img src="/assets/logo.png" alt="Company Logo" className="w-32 h-auto mb-4" loading="lazy"/>
                     <p className="text-lg text-justify leading-relaxed">
                     We prioritize accuracy, efficiency, and customized solutions, ensuring your practice thrives while you focus on providing outstanding patient care
                     </p>
@@ -60,10 +60,10 @@ function Footer() {
                             <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" />
                         </Link> */}
                         <Link to="https://www.linkedin.com/in/skz-billing-9b5352353/" className="transition-transform hover:scale-110">
-                            <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
+                            <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" loading="lazy"/>
                         </Link>
                         <Link to="https://www.instagram.com/skzmedbilling/" className="transition-transform hover:scale-110">
-                            <img src="/assets/instagram.png" alt="Instagram" className="w-8 h-8" />
+                            <img src="/assets/instagram.png" alt="Instagram" className="w-8 h-8" loading="lazy"/>
                         </Link>
                     </div>
                 </div>
