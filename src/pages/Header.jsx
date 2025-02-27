@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
+    const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
     // Close mobile menu on window resize
     useEffect(() => {
         const handleResize = () => {
