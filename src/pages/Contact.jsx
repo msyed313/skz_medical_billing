@@ -1,25 +1,25 @@
 import React, { useState } from 'react'
 import Component from '../components/Component'
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 function Contact() {
     const contactDetails = [
         {
             icon: "/assets/pin.png",
             title: "Address",
             content: "5729 savoy dr Houston tx 77036",
-            ref:"https://www.google.com/maps/search/?api=1&query=5729+Savoy+Dr,+Houston,+TX+77036"
+            ref: "https://www.google.com/maps/search/?api=1&query=5729+Savoy+Dr,+Houston,+TX+77036"
         },
         {
             icon: "/assets/email.png",
             title: "Email Us",
             content: "skzmedicalbilling@gmail.com",
-            ref:"mailto:skzmedicalbilling@gmail.com"
+            ref: "mailto:skzmedicalbilling@gmail.com"
         },
         {
             icon: "/assets/telephone.png",
             title: "Call Now",
             content: "(469) 733-6551",
-            ref:"tel:+14697336551"
+            ref: "tel:+14697336551"
         },
     ];
     const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ function Contact() {
 
     const [errors, setErrors] = useState({});
 
-    const services = ["RCM", "Credentialing", "Medical Coding", "Biling & Follow-Up Services", "Compliance & Reporting","Dental"];
+    const services = ["RCM", "Credentialing", "Medical Coding", "Biling & Follow-Up Services", "Compliance & Reporting", "Dental"];
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -45,31 +45,57 @@ function Contact() {
         if (!formData.lastName.trim()) newErrors.lastName = "Last Name is required";
         if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email))
             newErrors.email = "Valid Email is required";
-        if (!formData.phone.trim() || !/^\d{10}$/.test(formData.phone))
-            newErrors.phone = "Valid 10-digit Phone Number is required";
+        if (!formData.phone.trim()) newErrors.phone = " Phone Number is required";
         if (!formData.service) newErrors.service = "Please select a service";
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            emailjs.send(
-                "service_u9h8ris", // Replace with your EmailJS service ID
-                "template_f6rvgzk", // Replace with your EmailJS template ID
-                formData,
-                "-XDC2AnJLT1rsJY3E" // Replace with your EmailJS public key (user ID)
-            )
-                .then((response) => {
-                    alert("Message sent successfully!");
-                    setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
-                })
-                .catch((error) => {
-                    alert("Error sending message!");
-                    console.log("EmailJS Error:", error);
-                });
+            // emailjs.send(
+            //     "service_u9h8ris", // Replace with your EmailJS service ID
+            //     "template_f6rvgzk", // Replace with your EmailJS template ID
+            //     formData,
+            //     "-XDC2AnJLT1rsJY3E" // Replace with your EmailJS public key (user ID)
+            // )
+            //     .then((response) => {
+            //         alert("Message sent successfully!");
+            //         setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
+            //     })
+            //     .catch((error) => {
+            //         alert("Error sending message!");
+            //         console.log("EmailJS Error:", error);
+            //     });
+
+            try {
+                // Replace these with your actual EmailJS service ID, template ID, and public key
+                // You'll need to sign up at https://www.emailjs.com/ and create these
+                const serviceId = 'service_u9h8ris';
+                const templateId = 'template_f6rvgzk';
+                const publicKey = '-XDC2AnJLT1rsJY3E';
+
+                await emailjs.send(
+                    serviceId,
+                    templateId,
+                    {
+                        name: formData.firstName + " " + formData.lastName,
+                        email: formData.email,
+                        phone: formData.phone,
+                        service: formData.service,
+                        message: formData.message
+                    },
+                    publicKey
+                );
+
+                alert("Message sent successfully!");
+                setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
+            } catch (error) {
+                alert("Error sending message!");
+                console.log("EmailJS Error:", error);
+            }
 
         }
     };
