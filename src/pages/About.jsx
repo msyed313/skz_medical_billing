@@ -42,7 +42,7 @@ function About() {
                         Medical Solutions
                     </button>
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
-                        SZK <span className="text-[#0077B6]">x</span> HealthCare
+                        SKZ <span className="text-[#0077B6]">x</span> HealthCare
                     </h2>
                 </div>
 
