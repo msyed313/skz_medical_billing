@@ -56,9 +56,9 @@ function Footer() {
 
                     {/* Social Icons */}
                     <div className="flex space-x-4 mt-4">
-                        {/* <Link to="#" className="transition-transform hover:scale-110">
-                            <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" />
-                        </Link> */}
+                        <Link to="https://www.facebook.com/profile.php?id=61573605331351&name=xhp_nt__fb__action__open_user&_rdr" className="transition-transform hover:scale-110">
+                            <img src="/assets/facebook.png" alt="Facebook" className="w-8 h-8" loading="lazy" />
+                        </Link>
                         <Link to="https://www.linkedin.com/in/skz-billing-9b5352353/" className="transition-transform hover:scale-110">
                             <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8" loading="lazy"/>
                         </Link>
