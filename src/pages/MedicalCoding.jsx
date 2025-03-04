@@ -2,6 +2,7 @@ import React from "react";
 import Component from "../components/Component";
 import OurServicesComponent from "../components/OurServicesComponent";
 import Started from "../components/Started";
+import MouseTrail from "../components/MouseTrail";
 
 const MedicalCoding = () => {
     const features = [
@@ -36,6 +37,7 @@ const MedicalCoding = () => {
             />
             
             <Started/>
+            <MouseTrail/>
         </>
     );
 };

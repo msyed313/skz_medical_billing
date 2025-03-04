@@ -2,6 +2,7 @@ import React from 'react'
 import Component from '../components/Component'
 import Started from '../components/Started'
 import OurServicesComponent from '../components/OurServicesComponent';
+import MouseTrail from '../components/MouseTrail';
 function BillingServices() {
     const features = [
         {
@@ -34,6 +35,7 @@ function BillingServices() {
             />
 
         <Started/>
+        <MouseTrail/>
     </>
   )
 }

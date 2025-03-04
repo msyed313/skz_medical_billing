@@ -19,15 +19,28 @@ const Benefit = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white p-6  rounded-lg shadow-md flex items-center space-x-4">
-               <img src={feature.icon} className="w-1/5" loading="lazy" />
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.desc}</p>
+            <div key={index} className="group relative w-full h-40 perspective">
+              {/* Front Side */}
+              <div className="absolute w-full h-full bg-white p-6 rounded-lg shadow-md flex items-center space-x-4 transition-transform duration-500 group-hover:rotate-y-180 backface-hidden">
+                <img src={feature.icon} className="w-1/5" loading="lazy" />
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
+                  <p className="text-gray-600 text-sm">{feature.desc}</p>
+                </div>
+              </div>
+
+              {/* Back Side */}
+              <div className="absolute w-full h-full bg-[#0097B2] text-white p-6 rounded-lg shadow-md flex items-center justify-center rotate-y-180 backface-hidden transition-transform duration-500 group-hover:rotate-y-0">
+                <img src={feature.icon} className="w-1/5 transition-all duration-500 filter brightness-0 invert" loading="lazy" />
+                <div>
+                  <h3 className="text-lg font-semibold text-black">{feature.title}</h3>
+                  <p className="text-white text-sm">{feature.desc}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

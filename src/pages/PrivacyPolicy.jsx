@@ -1,5 +1,6 @@
 import React from "react";
 import Component from "../components/Component";
+import MouseTrail from "../components/MouseTrail";
 
 const PrivacyPolicy = () => {
     return (
@@ -101,6 +102,7 @@ const PrivacyPolicy = () => {
                 </section>
 
             </div>
+            <MouseTrail/>
         </>
     );
 };

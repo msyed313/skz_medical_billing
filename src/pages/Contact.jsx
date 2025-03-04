@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Component from '../components/Component'
 import emailjs from '@emailjs/browser';
+import MouseTrail from '../components/MouseTrail';
+import { meta } from '@eslint/js';
 function Contact() {
     const contactDetails = [
         {
@@ -55,27 +57,12 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // emailjs.send(
-            //     "service_u9h8ris", // Replace with your EmailJS service ID
-            //     "template_f6rvgzk", // Replace with your EmailJS template ID
-            //     formData,
-            //     "-XDC2AnJLT1rsJY3E" // Replace with your EmailJS public key (user ID)
-            // )
-            //     .then((response) => {
-            //         alert("Message sent successfully!");
-            //         setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
-            //     })
-            //     .catch((error) => {
-            //         alert("Error sending message!");
-            //         console.log("EmailJS Error:", error);
-            //     });
-
             try {
                 // Replace these with your actual EmailJS service ID, template ID, and public key
                 // You'll need to sign up at https://www.emailjs.com/ and create these
-                const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID||'service_u9h8ris' ;
-                const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID||'template_f6rvgzk' ;
-                const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY|| '-XDC2AnJLT1rsJY3E' ;
+                const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_u9h8ris';
+                const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_f6rvgzk';
+                const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '-XDC2AnJLT1rsJY3E';
 
                 await emailjs.send(
                     serviceId,
@@ -99,26 +86,63 @@ function Contact() {
 
         }
     };
+
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     if (validateForm()) {
+    //     const response = await fetch("https://your-backend.onrender.com/send-email", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify(formData),
+    //     });
+
+    //     const data = await response.json();
+
+    //     if (data.success) {
+    //         alert("Email sent successfully!");
+    //     } else {
+    //         alert("Failed to send email. Please try again.");
+    //     }
+    // }
+    // };
+
+
+
     return (
         <>
             <Component name="Contact Us" />
+
 
             <section className="py-12 px-6 bg-[#F5F7FA]">
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                     {contactDetails.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white shadow-lg rounded-2xl p-6 text-center flex flex-col items-center"
+                            className="group relative w-full h-56 perspective"
                         >
-                            <div className="bg-gray-100 w-20 rounded-full p-4 flex items-center justify-center">
-                                <img src={item.icon} className='w-full' />
+                            {/* Front Side */}
+                            <div className="absolute w-full h-full bg-white shadow-lg rounded-2xl p-6 text-center flex flex-col items-center transition-transform duration-500 group-hover:rotate-y-180 backface-hidden">
+                                <div className="bg-gray-100 w-20 rounded-full p-4 flex items-center justify-center">
+                                    <img src={item.icon} className='w-full' />
+                                </div>
+                                <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
+                                <a href={item.ref} className="text-[#0097B2] hover:text-[#006080] mt-2">{item.content}</a>
                             </div>
-                            <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
-                            <a href={item.ref} className="text-[#0097B2] hover:text-[#006080]  mt-2">{item.content}</a>
+
+                            {/* Back Side */}
+                            <div className="absolute w-full h-full bg-[#0097B2] shadow-lg rounded-2xl p-6 text-center flex flex-col items-center justify-center text-white rotate-y-180 backface-hidden transition-transform duration-500 group-hover:rotate-y-0">
+                                <div className="bg-gray-100 w-20 rounded-full p-4 flex items-center justify-center">
+                                    <img src={item.icon} className='w-full' />
+                                </div>
+                                <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
+                                <a href={item.ref} className="text-white hover:text-[#006080] mt-2">{item.content}</a>
+                            </div>
                         </div>
                     ))}
                 </div>
             </section>
+
 
             {/* Consultation Form */}
 
@@ -248,7 +272,7 @@ function Contact() {
                 </div>
             </section>
 
-
+            <MouseTrail />
 
         </>
     )

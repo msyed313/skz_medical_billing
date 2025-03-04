@@ -55,7 +55,7 @@ function ServicesComponent() {
         {services.map((item, index) => (
           <NavLink to={item.link} key={index} className="h-full">
             <div
-              className="bg-white rounded-2xl shadow-lg py-10 px-6 flex flex-col items-center space-y-4 hover:bg-[#0097B2] hover:cursor-pointer hover:shadow-2xl transition-all h-full"
+              className="bg-white rounded-2xl shadow-lg py-10 px-6 flex flex-col items-center space-y-4 hover:bg-[#0097B2] hover:cursor-pointer hover:shadow-2xl transition-all h-full group"
             >
               {/* Image Wrapper */}
               <div className="w-32 text-white flex items-center justify-center rounded-full text-xl font-bold">
@@ -64,8 +64,8 @@ function ServicesComponent() {
 
               {/* Text Content */}
               <div className="flex flex-col items-center justify-start h-full">
-                <p className="text-2xl font-semibold my-2">{item.service}</p>
-                <p className="text-gray-600 text-lg text-center my-2">
+                <p className="text-2xl font-semibold my-2 ">{item.service}</p>
+                <p className="text-gray-600 text-lg text-center my-2 group-hover:text-white">
                   {item.description}
                 </p>
               </div>

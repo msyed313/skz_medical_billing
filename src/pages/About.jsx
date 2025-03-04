@@ -4,6 +4,7 @@ import Started from '../components/Started'
 import Benefit from '../components/Benefit'
 import AboutUs from '../components/AboutUs'
 import Industries from '../components/Industries'
+import MouseTrail from '../components/MouseTrail'
 
 function About() {
 
@@ -78,7 +79,7 @@ function About() {
             {/* Contact Section */}
 
             <Started />
-
+          <MouseTrail/>
         </>
     )
 }

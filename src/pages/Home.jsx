@@ -4,9 +4,11 @@ import Started from "../components/Started";
 import ServicesComponent from "../components/ServicesComponent";
 import Benefit from "../components/Benefit";
 import AboutUs from "../components/AboutUs";
+import MouseTrail from "../components/MouseTrail";
 function Home() {
   return (
     <>
+    
       <div className="relative h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: `url("/assets/background.jpg")` }}>
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-white opacity-70"></div>
@@ -94,7 +96,7 @@ function Home() {
       {/* Contact Section */}
 
       <Started />
-
+      <MouseTrail/>
     </>
   );
 }
