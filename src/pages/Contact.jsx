@@ -87,7 +87,6 @@ function Contact() {
         }
     };
 
-
     // const handleSubmit = async (e) => {
     //     e.preventDefault();
     //     if (validateForm()) {
@@ -106,8 +105,6 @@ function Contact() {
     //     }
     // }
     // };
-
-
 
     return (
         <>
