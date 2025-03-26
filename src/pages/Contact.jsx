@@ -61,22 +61,24 @@ function Contact() {
                 // Replace these with your actual EmailJS service ID, template ID, and public key
                 // You'll need to sign up at https://www.emailjs.com/ and create these
                 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ;
-                const templateId = process.env.VITE_EMAILJS_TEMPLATE_ID;
-                const publicKey = process.env.VITE_EMAILJS_PUBLIC_KEY ;
-                 console.log("serviceId:",serviceId);
+                const templateId = import.meta.VITE_EMAILJS_TEMPLATE_ID;
+                const publicKey = import.meta.VITE_EMAILJS_PUBLIC_KEY ;
+                console.log("Service ID:", serviceId);
+                console.log("Template ID:", templateId);
+                console.log("Public Key:", publicKey);
                  
-                // await emailjs.send(
-                //     serviceId,
-                //     templateId,
-                //     {
-                //         name: formData.firstName + " " + formData.lastName,
-                //         email: formData.email,
-                //         phone: formData.phone,
-                //         service: formData.service,
-                //         message: formData.message
-                //     },
-                //     publicKey
-                // );
+                await emailjs.send(
+                    serviceId,
+                    templateId,
+                    {
+                        name: formData.firstName + " " + formData.lastName,
+                        email: formData.email,
+                        phone: formData.phone,
+                        service: formData.service,
+                        message: formData.message
+                    },
+                    publicKey
+                );
 
                 alert("Message sent successfully!");
                 setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
