@@ -63,19 +63,20 @@ function Contact() {
                 const serviceId = process.env.VITE_EMAILJS_SERVICE_ID ;
                 const templateId = process.env.VITE_EMAILJS_TEMPLATE_ID;
                 const publicKey = process.env.VITE_EMAILJS_PUBLIC_KEY ;
-
-                await emailjs.send(
-                    serviceId,
-                    templateId,
-                    {
-                        name: formData.firstName + " " + formData.lastName,
-                        email: formData.email,
-                        phone: formData.phone,
-                        service: formData.service,
-                        message: formData.message
-                    },
-                    publicKey
-                );
+                 console.log("serviceId:",serviceId);
+                 
+                // await emailjs.send(
+                //     serviceId,
+                //     templateId,
+                //     {
+                //         name: formData.firstName + " " + formData.lastName,
+                //         email: formData.email,
+                //         phone: formData.phone,
+                //         service: formData.service,
+                //         message: formData.message
+                //     },
+                //     publicKey
+                // );
 
                 alert("Message sent successfully!");
                 setFormData({ firstName: "", email: "", lastName: "", service: "", phone: "", message: "" });
